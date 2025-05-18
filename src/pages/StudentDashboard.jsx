@@ -9,7 +9,7 @@ const StudentDashboard = () => {
   // Fetch subjects from the backend
   const fetchSubjects = async () => {
     try {
-      const response = await fetch("http://localhost:4500/exams/get-exams");
+      const response = await fetch("https://project-be-qpt1.onrender.com/exams/get-exams");
       const data = await response.json();
       setSubjects(data);
     } catch (error) {
